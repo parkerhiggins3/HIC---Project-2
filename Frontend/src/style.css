@@ -5,3 +5,11 @@ body{
     width: 100%;
     height: auto;
 }
+img{
+    width: 15%;
+    height: auto;
+}
+.section{
+    display: grid;
+    justify-content: center;
+}
