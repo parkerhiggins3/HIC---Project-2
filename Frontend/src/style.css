@@ -48,3 +48,13 @@ img{
     display: grid;
     justify-content: center;
 }
+.map{
+    margin: 5%;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+.reason{
+    margin: 5%;
+    border: 3px black solid;
+    border-radius: 5px;
+}
