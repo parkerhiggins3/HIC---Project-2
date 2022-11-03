@@ -13,6 +13,23 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
+.divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.personal-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.line{
+
+    border-bottom: 4px solid rgb(83, 215, 174);
+    width: 100%;
+}
 img{
     width: 15%;
     height: auto;
