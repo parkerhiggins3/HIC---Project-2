@@ -1,6 +1,6 @@
-<?<php>
+<?php
     include "../Backend/config.php"
-</php>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
