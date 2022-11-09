@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css"  href="src/style.css">
     <link rel="stylesheet" type="text/css" href="src/scrollbar.css">
     <link rel="shortcut icon" type="image/png" href="src/logo.png" />
+    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+    <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
 </head>
 <body>
     <div class="header">
@@ -36,5 +38,10 @@
         </a>
     </div>
     
+    <div class="MagicScroll" data-options="mode: carousel; height: 275px;">
+    <img src="example1.jpg" />
+    <img src="example2.jpg" />
+    </div>
+
 </body>
 </html>
