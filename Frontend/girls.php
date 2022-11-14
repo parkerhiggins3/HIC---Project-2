@@ -35,6 +35,5 @@
                 </lord-icon>
         </a>
     </div>
-    
 </body>
 </html>
