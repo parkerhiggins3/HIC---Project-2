@@ -32,73 +32,19 @@ body{
 .header a:visited{
     color: black;
 }
-.header a:hover{
-    color: rgb(53, 231, 216);
-}
-.divider{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.personal-data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.line{
-    border-bottom: 4px solid rgb(83, 215, 174);
+body{
     width: 100%;
-    padding: 30px;
 }
-.kids .boys, .girls .adults img{
-    width: 220px;
-    height: auto;
-}
-.adults .mens, .womens img{
+img{
+    width: 15%;
     width: 220px;
     height: auto;
 }
 .section{
-    display: grid;
-    justify-content: center;
-}
-.map{
-    margin: 5%;
-    border: 3px black solid;
-    border-radius: 5px;
-}
-.reason{
     margin: 5%;
     border: 3px black solid;
     border-radius: 5px;
 }
 div a:visited{
     color: black;
-}
-.prod-details{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.prod-details .single-image{
-    width: 50px;
-    height: 600px;
-}
-.prod-details .single-icons img{
-    width: 30%;
-}
-.prod-details .single-details{
-    width: 50%;
-    padding-top: 30px;
-}
-.small-images-group{
-    display: flex;
-    justify-content: space-between;
-}
-.small-icons{
-    flex-basis: 24%;
-    cursor: pointer;
 }
