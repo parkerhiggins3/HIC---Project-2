@@ -94,3 +94,60 @@ div a:visited{
     font-size: 18px;
     text-decoration: none;
 }
+.about-company{
+    border: 3px solid #66ff99;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 25px;
+}
+.about-company h2{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.about-company p{
+    background-color: #1affa3;
+    border: 3px solid white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.about-products{
+    border: 3px solid #66ff99;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 25px;
+}
+.about-products h2{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.about-products p{
+    background-color: #1affa3;
+    border: 3px solid white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.return-policy{
+    border: 3px solid #66ff99;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 25px;
+}
+.return-policy h2{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.return-policy p{
+    background-color: #1affa3;
+    border: 3px solid white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
