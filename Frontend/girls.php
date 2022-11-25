@@ -11,29 +11,34 @@
     <link rel="stylesheet" type="text/css"  href="src/style.css">
     <link rel="stylesheet" type="text/css" href="src/scrollbar.css">
     <link rel="shortcut icon" type="image/png" href="src/logo.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme>">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="sections.html">Sections</a>
-        <a href="information.html">Information</a>
-        <a href="contact.html">Contact</a>
-        <a href="payment.html">
-            <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-                <lord-icon
-                src="https://cdn.lordicon.com/udbbfuld.json"
-                trigger="hover"
-                style="width:50px;height:50px">
-                </lord-icon>
-        </a>
-        <a href="profile.html"> 
-            <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-                <lord-icon
-                    src="https://cdn.lordicon.com/hbvyhtse.json"
-                    trigger="hover"
-                    style="width:50px;height:50px">
-                </lord-icon>
-        </a>
+    <div class="header w3-bar w3-dark-grey">
+        <a href="index.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:16%">Home</a>
+        <a href="sections.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:16%">Sections</a>
+        <a href="information.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:16%">Information</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:16%">Contact</a>
+        <a href="payment.php" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan material-icons" style="width:16%">shopping_cart</a>
+        <a href="profile.php" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan material-icons" style="width:16%">person</a>
     </div>
+    
+    <h1>Girl's Section</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+    </div>
+
 </body>
 </html>
