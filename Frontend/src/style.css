@@ -38,18 +38,6 @@ p{
 .matter-des{
     margin-right: 25px;
 }
-.kids{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.adults{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 body{
     width: 100%;
@@ -163,5 +151,42 @@ div a:visited{
 .reason button{
     color: white;
     background-color: #008ae6;
+    border-radius: 5px;
+}
+.sections-divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sections-divider a{
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    background-color: #008ae6;
+    border-radius: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.sections-divider img{
+    margin: 20px;
+}
+.kids{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
+    padding: 30px;
+    border-radius: 5px;
+}
+.adults{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid black;
+    padding: 30px;
     border-radius: 5px;
 }
