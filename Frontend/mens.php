@@ -12,7 +12,12 @@
     <link rel="stylesheet" type="text/css" href="src/scrollbar.css">
     <link rel="shortcut icon" type="image/png" href="src/logo.png" />
     <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme>">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
+
 </head>
 <body>
     <div class="header">

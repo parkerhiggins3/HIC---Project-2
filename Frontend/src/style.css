@@ -3,9 +3,25 @@ body{
     align-items: center;
     text-align: center;
 }
+p{
+    font-family: Acme;
+    font-size: large;
+}
 .bg-video{
     width: 100%;
     height: auto;
+}
+#welcome{
+    font-family: Lobster;
+    font-weight: bolder;
+    font-size: 80px;
+}
+#message{
+    font-family: Lobster;
+    font-size: 30px;
+}
+#sect{
+    color: white;
 }
 .header{
     display: flex;
@@ -17,6 +33,21 @@ body{
     font-weight: 800;
     text-decoration: none;
 }
+.matter{
+    background-color: #b3cccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 45px 0;
+}
+.matter img {
+    width: 60%;
+    height: auto;
+}
+.matter-des{
+    margin-right: 25px;
+}
 .kids{
     display: flex;
     flex-direction: row;
@@ -25,7 +56,7 @@ body{
 }
 .adults{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -47,4 +78,19 @@ img{
 }
 div a:visited{
     color: black;
+}
+.allsections{
+    margin: 0px 40% 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #1affa3;
+}
+.allsections a{
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
 }
