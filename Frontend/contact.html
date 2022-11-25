@@ -14,41 +14,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="sections.html">Sections</a>
-        <a href="information.html">Information</a>
-        <a href="payment.html">
-            <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-                <lord-icon
-                src="https://cdn.lordicon.com/udbbfuld.json"
-                trigger="hover"
-                style="width:50px;height:50px">
-                </lord-icon>
-        </a>
-        <a href="profile.html"> 
-            <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-                <lord-icon
-                    src="https://cdn.lordicon.com/hbvyhtse.json"
-                    trigger="hover"
-                    style="width:50px;height:50px">
-                </lord-icon>
-        </a>
+    <div class="header w3-bar w3-dark-grey">
+        <a href="index.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:33%">Home</a>
+        <a href="sections.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:33%">Sections</a>
+        <a href="information.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:33%">Information</a>
+        <a href="payment.php" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan material-icons" style="width:33%">shopping_cart</a>
+        <a href="profile.php" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan material-icons" style="width:33%">person</a>
+    </div><br>
+    <h2 id="message">Please give us the details below and we will get back to you ASAP!</h2>
+    <div class="divider">
+        <div class="contact-img">
+            <img src="src/contact.jpg">
+        </div>
+        <div class="reason"> 
+            <label><b>Email:</b></label>
+            <input type="email" placeholder="email"><br><br>
+            <label><b>Reason:</b></label><br>
+            <textarea rows = "10" cols = "60" name = "description">
+            </textarea><br><br>
+            <button>Send</button>
+        </div>
     </div>
     
-    <div class="divider">
-        <div class="map">
-            <p>Location:</p>
-            <img src="src/map.jpg" alt="map image">
-        </div>
-        <div class="reason">
-            <p>Contact:</p>
-            <label>Email:</label>
-            <input type="email" placeholder="Email"><br>
-            <label>Reason:</label><br>
-            <textarea rows = "10" cols = "60" name = "description">
-            </textarea><br>
-        </div>
-    </div>
 </body>
 </html>
