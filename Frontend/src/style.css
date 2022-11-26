@@ -190,17 +190,3 @@ div a:visited{
     padding: 30px;
     border-radius: 5px;
 }
-.list{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: baseline;
-    border: 5px solid black;
-}
-.items{
-    border: 5px solid #ff8080;
-}
-.items img{
-    width: 10%;
-    height: 20%;
-}

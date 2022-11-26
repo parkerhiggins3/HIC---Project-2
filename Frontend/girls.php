@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Girl's Section</title>
-    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="stylesheet" type="text/css" href="src/style2.css">
     <link rel="stylesheet" type="text/css" href="src/scrollbar.css">
     <link rel="shortcut icon" type="image/png" href="src/logo.png" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -27,22 +27,56 @@
     <div class="list">
         <div class="items">
             <img src="src/example.jpg">
-            <p>Shirt</p>
-            <p>$49</p>
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
         </div>
         <div class="items">
-            <p>Shirt</p>
-            <p>$79</p>
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
         </div>
         <div class="items">
-            <p>Shirt</p>
-            <p>$69</p>
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
         </div>
         <div class="items">
-            <p>Shirt</p>
-            <p>$59</p>
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
         </div>
-    </div>   
-        
+    </div> 
+
+    <div class="list">
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+    </div> 
+    
 </body>
 </html>

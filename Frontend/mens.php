@@ -1,6 +1,4 @@
-<?php
-    include "../Backend/config.php"
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Men's Section</title>
-    <link rel="stylesheet" type="text/css"  href="src/style.css">
+    <link rel="stylesheet" type="text/css"  href="src/style2.css">
     <link rel="stylesheet" type="text/css" href="src/scrollbar.css">
     <link rel="shortcut icon" type="image/png" href="src/logo.png" />
     <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
@@ -20,32 +18,68 @@
 
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="sections.html">Sections</a>
-        <a href="information.html">Information</a>
-        <a href="contact.html">Contact</a>
-        <a href="payment.html">
-            <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-                <lord-icon
-                src="https://cdn.lordicon.com/udbbfuld.json"
-                trigger="hover"
-                style="width:50px;height:50px">
-                </lord-icon>
-        </a>
-        <a href="profile.html"> 
-            <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-                <lord-icon
-                    src="https://cdn.lordicon.com/hbvyhtse.json"
-                    trigger="hover"
-                    style="width:50px;height:50px">
-                </lord-icon>
-        </a>
+<div class="header w3-bar w3-dark-grey">
+        <a href="index.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Home</a>
+        <a href="sections.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Sections</a>
+        <a href="information.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Information</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Contact</a>
+        <a href="payment.php" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan material-icons" style="width:20%">shopping_cart</a>
     </div>
     
-    <div class="MagicScroll" data-options="mode: carousel; height: 275px;">
-    <img src="example1.jpg" />
-    <img src="example2.jpg" />
+    <h1 id="message">Men's Section</h1>
+
+    <div class="list">
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+    </div> 
+
+    <div class="list">
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
+        <div class="items">
+            <img src="src/example.jpg">
+            <h3>Shirt</h3>
+            <h5>$49</h5>
+            <p>Available in all sizes</p>
+        </div>
     </div>
 
 </body>
