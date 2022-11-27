@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,30 +26,31 @@
     <h1 id="message">Boy's Section</h1>
 
     <div class="list">
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
+    <?php
+        include "../Backend/config.php";
+
+        $stmt = $pdo->prepare(
+            "select 
+                product_name, price, image
+            from 
+                product
+            where
+                category_id = 1"
+        );
+
+        $stmt->execute();
+
+        while($row = $stmt->fetch()) {
+            echo "
+                <div class='items'>
+                <img src='".$row["image"]."'>
+                <h3>".$row["product_name"]."</h3>
+                <h5>".$row["price"]."</h5>
+                <p>Available in all sizes</p>
+                </div>
+            ";
+        }
+    ?>
     </div> 
 
     <div class="list">
