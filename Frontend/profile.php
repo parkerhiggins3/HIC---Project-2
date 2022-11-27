@@ -1,6 +1,4 @@
-<?php
-    include "../Backend/config.php"
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,37 +15,44 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="sections.html">Sections</a>
-        <a href="information.html">Information</a>
-        <a href="contact.html">Contact</a>
-        <a href="payment.html">
-            <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-                <lord-icon
-                src="https://cdn.lordicon.com/udbbfuld.json"
-                trigger="hover"
-                style="width:50px;height:50px">
-                </lord-icon>
-        </a>
+    <div class="header w3-bar w3-dark-grey">
+        <a href="index.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Home</a>
+        <a href="sections.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Sections</a>
+        <a href="information.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Information</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Contact</a>
+        <a href="payment.php" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan material-icons" style="width:20%">shopping_cart</a>
+
     </div>
+
+    <h1 id="message">Profile settings</h1>
+
     <div class="divider">
         <div class="wishlist">
-            <h3>Wishlist:</h3>
-            <h3>Favorites items:</h3>
-            <h3>Saved items:</h3>
+            <h3><b>Wishlist:</b></h3>
+
+            <h3><b>Favorites items:</b></h3>
+
+            <h3><b>Saved items:</b></h3>
         </div>
         <div class="personal-data">
             <form class="profile-form">
-                <label><b>Name:</b></label>
+                <p><b>Personal details:</b></p><br>
+                <label><b>Full Name:</b></label>
                 <input type="text" name="name"><br><br>
-                <label><b>Email:</b></label>
-                <input type="email" name="email"><br><br>
                 <label><b>Birthday:</b></label>
                 <input type="date" name="birthday"><br><br>
+                <label><b>Gender:</b></label>
+                <select>
+                    <option></option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                </select><br><br>
+                <label><b>Email:</b></label>
+                <input type="email" name="email"><br><br>
                 <label><b>Phone:</b></label>
-                <input type="tel" name="phone number"><br><br>
-                <h3>Address</h3>
+                <input type="tel" name="phone number">
+                <p><b>Address:</b></p>
                 <label><b>Flat address:</b></label>
                 <input type="text" name="name"><br><br>
                 <label><b>City:</b></label>
@@ -106,25 +111,19 @@
                     <option value="WV">West Virginia</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
-                </select>
+                </select><br><br>
                 <label><b>Pincode:</b></label>
                 <input type="number" name="name"><br><br>
-                <input type="submit" value="Submit">
             </form>
-            <div class="displaypic">
-                <img src="src/dp.png" alt="Plain dp">
-                <label><b>Upload profile pic:</b></label>
-                <input type="file" name="img" accept="image/*"> 
-            </div>
         </div>
-    </div><br><br>
-    <div class="line"></div><br><br>
-    <h1>History</h1>
-    <div class="most-recent">
-        <p><b>Most recent:</b></p>
+        <div class="displaypic">
+                <img src="src/dp.png" alt="Plain dp"><br><br>
+                <label><b>Upload profile pic:</b></label><br><br>
+                <input type="file" name="img" accept="image/*"> 
+        </div>
     </div>
-    <div class="most-section">
-        <p><b>Most recent in Sections:</b></p>
-    </div>
+
+    <button id="bt">Submit</button>
+
 </body>
 </html>
