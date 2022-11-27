@@ -35,30 +35,23 @@
             <h3><b>Saved items:</b></h3>
         </div>
         <div class="personal-data">
-            <form class="profile-form">
+            <form class="profile-form" action="../Backend/submit.php" name="cust_form" method="post">
                 <p><b>Personal details:</b></p><br>
-                <label><b>Full Name:</b></label>
-                <input type="text" name="name"><br><br>
-                <label><b>Birthday:</b></label>
-                <input type="date" name="birthday"><br><br>
-                <label><b>Gender:</b></label>
-                <select>
-                    <option></option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Prefer not to say</option>
-                </select><br><br>
+                <label><b>First Name:</b></label>
+                <input type="text" name="first_name"><br><br>
+                <label><b>Last Name:</b></label>
+                <input type="text" name="last_name"><br><br>
                 <label><b>Email:</b></label>
                 <input type="email" name="email"><br><br>
                 <label><b>Phone:</b></label>
-                <input type="tel" name="phone number">
+                <input type="tel" name="phone_number">
                 <p><b>Address:</b></p>
-                <label><b>Flat address:</b></label>
-                <input type="text" name="name"><br><br>
+                <label><b>Address:</b></label>
+                <input type="text" name="address"><br><br>
                 <label><b>City:</b></label>
-                <input type="text" name="name"><br><br>
+                <input type="text" name="city"><br><br>
                 <label><b>State:</b></label>
-                <select>
+                <select name="state">
                     <option>Select a State</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -112,8 +105,8 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
                 </select><br><br>
-                <label><b>Pincode:</b></label>
-                <input type="number" name="name"><br><br>
+                <label><b>Zipcode:</b></label>
+                <input type="number" name="zip"><br><br>
             </form>
         </div>
         <div class="displaypic">

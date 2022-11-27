@@ -28,59 +28,37 @@
     
     <h1 id="message">Men's Section</h1>
 
-    <div class="list">
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-    </div> 
+    <?php
+        include "../Backend/config.php";
 
-    <div class="list">
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-    </div>
+        $stmt = $pdo->query(
+            "select 
+                product_name, price, image
+            from 
+                product
+            where
+                category_id = 3"
+        );
+
+        $count = 0;
+
+        echo "<div class='list'>";
+
+        while($row = $stmt->fetch()) {
+            if($count % 4 == 0) {
+                echo "</div><div class='list'>";
+            }
+
+            echo "
+                <div class='items'>
+                <img src='".$row["image"]."'>
+                <h3>".$row["product_name"]."</h3>
+                <h5>".$row["price"]."</h5>
+                <p>Available in all sizes</p>
+                </div>
+            ";
+        }
+    ?>
 
 </body>
 </html>

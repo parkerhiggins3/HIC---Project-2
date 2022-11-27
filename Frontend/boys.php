@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div class="header w3-bar w3-dark-grey">
+    <div class="header w3-bar w3-dark-grey">
         <a href="index.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Home</a>
         <a href="sections.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Sections</a>
         <a href="information.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Information</a>
@@ -25,11 +25,10 @@
     
     <h1 id="message">Boy's Section</h1>
 
-    <div class="list">
     <?php
         include "../Backend/config.php";
 
-        $stmt = $pdo->prepare(
+        $stmt = $pdo->query(
             "select 
                 product_name, price, image
             from 
@@ -38,9 +37,15 @@
                 category_id = 1"
         );
 
-        $stmt->execute();
+        $count = 0;
+
+        echo "<div class='list'>";
 
         while($row = $stmt->fetch()) {
+            if($count % 4 == 0) {
+                echo "</div><div class='list'>";
+            }
+
             echo "
                 <div class='items'>
                 <img src='".$row["image"]."'>
@@ -51,34 +56,5 @@
             ";
         }
     ?>
-    </div> 
-
-    <div class="list">
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-        <div class="items">
-            <img src="src/example.jpg">
-            <h3>Shirt</h3>
-            <h5>$49</h5>
-            <p>Available in all sizes</p>
-        </div>
-    </div>
-    
 </body>
 </html>
