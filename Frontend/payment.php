@@ -34,10 +34,11 @@
             <p>Item 4:</p>
         </div>
         <div class="card-details">
-            <h3>Payment</h3>
+            <h3><b>Payment</b></h3>
             <p><b>Card details:</b></p>
+            <p><b>Payment method:</b></p>
             <select>
-                <option value="method">Payment method</option>
+                <option value=></option>
                 <option value="debit card">Debit card</option>
                 <option value="credit card">Credit card</option>
                 <option value="cash">Cash on delivery</option>
