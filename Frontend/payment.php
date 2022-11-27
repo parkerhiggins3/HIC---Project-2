@@ -1,6 +1,3 @@
-<?php
-    include "../Backend/config.php"
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,32 +14,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div class="header">
-        <a href="index.html">Home</a>
-        <a href="sections.html">Sections</a>
-        <a href="information.html">Information</a>
-        <a href="contact.html">Contact</a>
-        <a href="payment.html">
-            <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
-                <lord-icon
-                src="https://cdn.lordicon.com/udbbfuld.json"
-                trigger="hover"
-                style="width:50px;height:50px">
-                </lord-icon>
-        </a>
+    <div class="header w3-bar w3-dark-grey">
+        <a href="index.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Home</a>
+        <a href="sections.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Sections</a>
+        <a href="information.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Information</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan" style="width:20%">Contact</a>
+        <a href="profile.php" class="w3-bar-item w3-button w3-border-right w3-hover-teal w3-mobile w3-cyan material-icons" style="width:20%">person</a>
+
     </div>
-    <h2>Cart</h2>
-    <div class="divider">
+
+    <h2 id="message">Shopping Cart</h2>
+
+    <div class="payment">
         <div class="items">
             <h3>Items in your cart:</h3>
             <p>Item 1:</p>
-            <img src="" alt="item1">
             <p>Item 2:</p>
-            <img src="" alt="item1">
             <p>Item 3:</p>
-            <img src="" alt="item1">
             <p>Item 4:</p>
-            <img src="" alt="item1">
         </div>
         <div class="card-details">
             <h3>Payment</h3>
@@ -55,46 +44,37 @@
             </select><br><br>
             <input type="text" class="card-number" placeholder="Card Number">
             <p><b>Expiration month:</b></p>
-            <div class="expiration-date">
-                <select name="Month">
-                    <option value="january">January</option>
-                    <option value="february">February</option>
-                    <option value="march">March</option>
-                    <option value="april">April</option>
-                    <option value="may">May</option>
-                    <option value="june">June</option>
-                    <option value="july">July</option>
-                    <option value="august">August</option>
-                    <option value="september">September</option>
-                    <option value="october">October</option>
-                    <option value="november">November</option>
-                    <option value="december">December</option>
-                </select>
-            </div>
-            <div class="year">
-                <select name="Year">
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2024">2025</option>
-                    <option value="2024">2026</option>
-                    <option value="2024">2027</option>
-                    <option value="2024">2028</option>
-                    <option value="2024">2029</option>
-                    <option value="2024">2030</option>
-                    <option value="2024">2031</option>
-                </select>
-            </div>
-            <div class="card-verification">
-                <p><b>CVV:</b></p>
-                <input type="text" placeholder="CVV">
-            </div><br>
-            <div class="billing">
-                <p><b>Billing address:</b></p>
-                <input type="text" placeholder="..">
-            </div><br>
-            <button type="submit" class="proceed-btn"><a href="#">Proceed</a></button>
+            <select name="Month">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+            </select>
+            <select name="Year">
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2024">2025</option>
+                <option value="2024">2026</option>
+                <option value="2024">2027</option>
+                <option value="2024">2028</option>
+                <option value="2024">2029</option>
+                <option value="2024">2030</option>
+                <option value="2024">2031</option>
+            </select>
+            <p><b>CVV:</b></p>
+            <input type="text" placeholder="CVV">
         </div>
-            
     </div>
+
+    <button id="bt">Proceed</button>
+
 </body>
 </html>
