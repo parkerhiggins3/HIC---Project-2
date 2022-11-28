@@ -27,34 +27,7 @@
 
     <?php
         include "../Backend/config.php";
-
-        $stmt = $pdo->query(
-            "select 
-                product_name, price, image
-            from 
-                product
-            where
-                category_id = 2"
-        );
-
-        $count = 0;
-
-        echo "<div class='list'>";
-
-        while($row = $stmt->fetch()) {
-            if($count % 4 == 0) {
-                echo "</div><div class='list'>";
-            }
-
-            echo "
-                <div class='items'>
-                <img src='".$row["image"]."'>
-                <h3>".$row["product_name"]."</h3>
-                <h5>".$row["price"]."</h5>
-                <p>Available in all sizes</p>
-                </div>
-            ";
-        }
+        showItems(2);
     ?>
     
 </body>

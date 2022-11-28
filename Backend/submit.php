@@ -1,7 +1,6 @@
 <?php
     include "./config.php";
-    
-    try {
+    if(empty($pdo->query("select user_id from customer where email = ".$_POST['email'])->fetch())) {
         $s = "
             insert into
                 customer(
@@ -26,9 +25,9 @@
             )
         ";
         $pdo->query($s);
-        echo "Thank you for submitting a profile! Click <a href='../Frontend/index.html'>here</a> to return to the home page.";
-    } catch(PDOException $error) {
-        echo "Error submitting profile, profile may already exist!";
-        echo "<p>Click <a href='../Frontend/profile.php'>here</a> to return to the profile page.</p>";
+        echo "Thank you for signing up! Click <a href='../Frontend/index.html'>here</a> to return to the home page.";
+    } else {
+        echo "Error submitting, email already in use!";
+        echo "<p>Click <a href='../Frontend/profile.php'>here</a> to return to the sign up page.</p>";
     }
 ?>
