@@ -18,18 +18,23 @@ function clearCart() {
 }
 
 function addToCart($id) {
-    $GLOBALS['pdo']->query("insert into cart values((select max(cart_id) from cart)+1,".$id.")");
+    $stmt = $GLOBALS['pdo']->prepare("insert into cart values((select max(cart_id) from cart)+1,?)");
+    $stmt->bindParam(1, $id, PDO::PARAM_STR);
+    $stmt->execute();
 }
 
 function showItems($id) {
-    $stmt = $GLOBALS['pdo']->query(
+    $stmt = $GLOBALS['pdo']->prepare(
         "select 
             product_name, price, image
         from 
             product
         where
-            category_id = ".$id
+            category_id = ?"
     );
+
+    $stmt->bindParam(1, $id, PDO::PARAM_STR);
+    $stmt->execute();
 
     $count = 0;
 

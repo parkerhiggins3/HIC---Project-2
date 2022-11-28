@@ -35,7 +35,7 @@
             <h3><b>Saved items:</b></h3>
         </div>
         <div class="personal-data">
-            <form class="profile-form" action="../Backend/submit.php" name="cust_form" method="post">
+            <form class="profile-form" action="../Backend/submit_cust.php" name="cust_form" method="post">
                 <p><b>Personal details:</b></p><br>
                 <label><b>First Name:</b></label>
                 <input type="text" name="first_name"><br><br>
