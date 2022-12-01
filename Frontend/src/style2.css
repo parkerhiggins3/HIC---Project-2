@@ -64,3 +64,24 @@ button{
     padding: 5px 10px;
     margin-bottom: 30px;
 }
+.order{
+    margin: 10px 18%;
+    padding: 10px 25px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #8fd5fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.order h1{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #c0e5f9;
+    padding: 5px 20px;
+}
+.order p{
+    text-align: center;
+}
