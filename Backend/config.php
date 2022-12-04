@@ -18,15 +18,21 @@ function clearCart() {
 }
 
 function addToCart($id) {
-    $stmt = $GLOBALS['pdo']->prepare("insert into cart values((select max(cart_id) from cart)+1,?)");
-    $stmt->bindParam(1, $id, PDO::PARAM_STR);
-    $stmt->execute();
+    $stmt1 = $GLOBALS['pdo']->prepare("select max(cart_id) as cart_id from shopping_cart");
+    $stmt1->execute();
+    $cart = $stmt1->fetch()['cart_id'];
+    $cart++;
+    
+    $stmt2 = $GLOBALS['pdo']->prepare("insert into shopping_cart values(?,?)");
+    $stmt2->bindParam(1, $cart, PDO::PARAM_STR);
+    $stmt2->bindParam(2, $id, PDO::PARAM_STR);
+    $stmt2->execute();
 }
 
 function showCart() {
     $stmt = $GLOBALS['pdo']->prepare(
         "select 
-            name, price
+            product_name, price
         from
             product p, shopping_cart s
         where
@@ -36,12 +42,32 @@ function showCart() {
     $stmt->execute();
     
     $str = "";
+
+    while($row = $stmt->fetch()) {
+        $str .= "<p>".$row['product_name']." $".$row['price']."</p>";
+    }
+
+    return $str;
+}
+
+function showTotal() {
+    $stmt = $GLOBALS['pdo']->prepare(
+        "select 
+            price
+        from
+            product p, shopping_cart s
+        where
+            p.product_id = s.product_id"
+    );
+
+    $stmt->execute();
     $total = 0;
 
     while($row = $stmt->fetch()) {
-        $str .= "<p>".$row['name']." $".$row['price']."</p>";
         $total += $row['price'];
     }
+
+    return $total;
 }
 
 function showItems($id) {

@@ -26,7 +26,7 @@
 
     <div class="order">
         <h1><b>Thank you for order</b></h1>
-        <h3><b>Confirmation code(#):</b></h3>
+        <h3><b>Confirmation code(#):<?php echo rand(0001, 9999) ?></b></h3>
         <h3><b>More details:</b></h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
             been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a</p>
