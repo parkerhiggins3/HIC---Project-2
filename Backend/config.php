@@ -23,10 +23,31 @@ function addToCart($id) {
     $stmt->execute();
 }
 
+function showCart() {
+    $stmt = $GLOBALS['pdo']->prepare(
+        "select 
+            name, price
+        from
+            product p, shopping_cart s
+        where
+            p.product_id = s.product_id"
+    );
+
+    $stmt->execute();
+    
+    $str = "";
+    $total = 0;
+
+    while($row = $stmt->fetch()) {
+        $str .= "<p>".$row['name']." $".$row['price']."</p>";
+        $total += $row['price'];
+    }
+}
+
 function showItems($id) {
     $stmt = $GLOBALS['pdo']->prepare(
         "select 
-            product_name, price, product_image
+            product_id, product_name, price, product_image
         from 
             product
         where
@@ -51,6 +72,10 @@ function showItems($id) {
             <h3>".$row["product_name"]."</h3>
             <h5>".$row["price"]."</h5>
             <p>Available in all sizes</p>
+            <form method='post' action='payment.php'>
+            <input type='hidden' name='id' value='".$row["product_id"]."'/>
+            <input type='submit' name='btn' value='Add to cart'/>
+            </form>
             </div>
         ";
 
