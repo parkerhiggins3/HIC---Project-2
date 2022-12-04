@@ -27,7 +27,7 @@
 
     <?php
         include "../Backend/config.php";
-        showItems(1);
+        echo showItems(1);
     ?>
 </body>
 </html>

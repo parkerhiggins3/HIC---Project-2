@@ -26,7 +26,7 @@ function addToCart($id) {
 function showItems($id) {
     $stmt = $GLOBALS['pdo']->prepare(
         "select 
-            product_name, price, image
+            product_name, price, product_image
         from 
             product
         where
@@ -38,21 +38,25 @@ function showItems($id) {
 
     $count = 0;
 
-    echo "<div class='list'>";
+    $str = "<div class='list'>";
 
     while($row = $stmt->fetch()) {
         if($count % 4 == 0) {
-            echo "</div><div class='list'>";
+            $str .= "</div><div class='list'>";
         }
 
-        echo "
+        $str .= "
             <div class='items'>
-            <img src='".$row["image"]."'>
+            <img src='".$row["product_image"]."'>
             <h3>".$row["product_name"]."</h3>
             <h5>".$row["price"]."</h5>
             <p>Available in all sizes</p>
             </div>
         ";
+
+        $count++;
     }
+
+    return $str;
 }
 ?>

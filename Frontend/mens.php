@@ -30,7 +30,7 @@
 
     <?php
         include "../Backend/config.php";
-        showItems(3);
+        echo showItems(3);
     ?>
 
 </body>
