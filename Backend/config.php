@@ -96,7 +96,7 @@ function showItems($id) {
             <div class='items'>
             <img src='".$row["product_image"]."'>
             <h3>".$row["product_name"]."</h3>
-            <h5>".$row["price"]."</h5>
+            <h5>$".$row["price"]."</h5>
             <p>Available in all sizes</p>
             <form method='post' action='payment.php'>
             <input type='hidden' name='id' value='".$row["product_id"]."'/>
