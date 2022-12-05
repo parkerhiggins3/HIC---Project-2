@@ -127,7 +127,7 @@ function showItemsDetails($id) {
 
     $str = "<div class='product'>
         <div class='product-img'>
-            <img src='src/example.jpg'>
+            <img src='".$results['product_image']."'>
         </div>
         <div class='product-details'>
             <h3>".$results['product_name']."</h3>
