@@ -220,14 +220,9 @@ div a:visited{
     clip-path: circle(50%);
     width: 50%;
 }
-#bt{
-    background-color: #35aff0;
-    color: white;
-    border-radius: 5px;
-    font-size: 18px;
-    margin-bottom: 30px;
-}
+
 .payment{
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -238,7 +233,8 @@ div a:visited{
     padding: 20px 30px;
 }
 .items{
-    font-weight: 700;
+    width: 40%;
+    font-weight: 800;
 }
 .items h3{
     font-weight: bold;
@@ -249,4 +245,21 @@ div a:visited{
     justify-content: space-between;
     border-left: 3px solid black;
     padding: 0px 45px 0px;
+}
+.card-at{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #b3fff0;
+    align-items: flex-end;
+    margin: 25px 5px ;
+}
+#bt{
+    background-color: #35aff0;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 0px 25px 30px;
+}
+button a{
+    text-decoration: none;
 }

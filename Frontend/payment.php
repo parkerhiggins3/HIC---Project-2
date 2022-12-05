@@ -43,43 +43,48 @@ include '../Backend/config.php';
         </div>
         <div class="card-details">
             <h3><b>Payment</b></h3>
-            <p><b>Card details:</b></p>
-            <p><b>Payment method:</b></p>
-                <select>
-                    <option value=></option>
-                    <option value="debit card">Debit card</option>
-                    <option value="credit card">Credit card</option>
-                    <option value="cash">Cash on delivery</option>
-                </select><br><br>
-                <input type="text" class="card-number" placeholder="Card Number">
-                <p><b>Expiration month:</b></p>
-                <select name="Month">
-                    <option value="january">January</option>
-                    <option value="february">February</option>
-                    <option value="march">March</option>
-                    <option value="april">April</option>
-                    <option value="may">May</option>
-                    <option value="june">June</option>
-                    <option value="july">July</option>
-                    <option value="august">August</option>
-                    <option value="september">September</option>
-                    <option value="october">October</option>
-                    <option value="november">November</option>
-                    <option value="december">December</option>
-                </select>
-                <select name="Year">
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2024">2025</option>
-                    <option value="2024">2026</option>
-                    <option value="2024">2027</option>
-                    <option value="2024">2028</option>
-                    <option value="2024">2029</option>
-                    <option value="2024">2030</option>
-                    <option value="2024">2031</option>
-                </select>
-                <p><b>CVV:</b></p>
-                <input type="text" placeholder="CVV">
+            <div class="card-at">
+                <p><b>Card details:</b></p>
+                <label><b>Payment method:</b></label>
+                    <select>
+                        <option value=></option>
+                        <option value="debit card">Debit card</option>
+                        <option value="credit card">Credit card</option>
+                        <option value="cash">Cash on delivery</option>
+                    </select><br><br>
+                    <label><b>Card Number:</b></label>
+                    <input type="text" class="card-number" placeholder="Card Number"><br><br>
+                    <label><b>Expiration month:</b></label>
+                    <select name="Month">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                    <select name="Year">
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2024">2025</option>
+                        <option value="2024">2026</option>
+                        <option value="2024">2027</option>
+                        <option value="2024">2028</option>
+                        <option value="2024">2029</option>
+                        <option value="2024">2030</option>
+                        <option value="2024">2031</option>
+                    </select><br><br>
+                    <label><b>CVV:</b></label>
+                    <input type="text" placeholder="CVV"><br><br>
+                    <label><b>Cardholder name:</b></label>
+                    <input type="text" placeholder="Name">
+            </div>
         </div>
     </div>
     <button id="bt"><a href='payment.php?clear=1'>Clear Cart</a></button>
