@@ -3,6 +3,10 @@ include '../Backend/config.php';
     if(array_key_exists('id', $_POST)) {
         addToCart($_POST['id']);
     }
+
+    if(array_key_exists('clear', $_GET)) {
+        clearCart();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,6 +39,7 @@ include '../Backend/config.php';
         <div class="items">
             <h3>Items in your cart:</h3>
             <?php echo showCart()?>
+            <h4>Total: $<?php echo showTotal() ?></h4>
         </div>
         <div class="card-details">
             <h3><b>Payment</b></h3>
@@ -77,7 +82,7 @@ include '../Backend/config.php';
                 <input type="text" placeholder="CVV">
         </div>
     </div>
-    
+    <button id="bt"><a href='payment.php?clear=1'>Clear Cart</a></button>
     <button id="bt"><a href='confirmation.php'>Proceed</a></button>
 </body>
 </html>

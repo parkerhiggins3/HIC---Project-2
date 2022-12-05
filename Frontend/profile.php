@@ -24,17 +24,10 @@
 
     </div>
 
-    <h1 id="message">Profile settings</h1>
+    <h1 id="message">Newsletter Sign-up</h1>
 
     <div class="divider">
-        <div class="wishlist">
-            <h3><b>Wishlist:</b></h3>
-
-            <h3><b>Favorites items:</b></h3>
-
-            <h3><b>Saved items:</b></h3>
-        </div>
-        <div class="personal-data">
+        <div>
             <form class="profile-form" action="confirm_prof.html" name="cust_form" method="post">
                 <p><b>Personal details:</b></p><br>
                 <label><b>First Name:</b></label>
@@ -108,11 +101,6 @@
                 <label><b>Zipcode:</b></label>
                 <input type="number" name="zip"><br><br>
             </form>
-        </div>
-        <div class="displaypic">
-                <img src="src/dp.png" alt="Plain dp"><br><br>
-                <label><b>Upload profile pic:</b></label><br><br>
-                <input type="file" name="img" accept="image/*"> 
         </div>
     </div>
 
