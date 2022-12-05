@@ -77,7 +77,7 @@ include '../Backend/config.php';
                 <input type="text" placeholder="CVV">
         </div>
     </div>
-
+    
     <button id="bt"><a href='confirmation.php'>Proceed</a></button>
 </body>
 </html>

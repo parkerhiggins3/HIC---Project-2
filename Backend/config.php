@@ -14,7 +14,7 @@ catch(PDOException $error) {
 }
 
 function clearCart() {
-    $GLOBALS['pdo']->query("delete from cart");
+    $GLOBALS['pdo']->query("delete from shopping_cart");
 }
 
 function addToCart($id) {
@@ -95,7 +95,7 @@ function showItems($id) {
         $str .= "
             <div class='items'>
             <img src='".$row["product_image"]."'>
-            <h3>".$row["product_name"]."</h3>
+            <h3><a href='product.php?id=".$row['product_id']."'>".$row["product_name"]."</a></h3>
             <h5>$".$row["price"]."</h5>
             <p>Available in all sizes</p>
             <form method='post' action='payment.php'>
@@ -107,6 +107,49 @@ function showItems($id) {
 
         $count++;
     }
+
+    return $str;
+}
+
+function showItemsDetails($id) {
+    $stmt = $GLOBALS['pdo']->prepare(
+        "select 
+            *
+        from 
+            product
+        where
+            product_id = ?"
+    );
+
+    $stmt->bindParam(1, $id, PDO::PARAM_STR);
+    $stmt->execute();
+    $results = $stmt->fetch();
+
+    $str = "<div class='product'>
+        <div class='product-img'>
+            <img src='src/example.jpg'>
+        </div>
+        <div class='product-details'>
+            <h3>".$results['product_name']."</h3>
+            <h4>".$results['price']."</h4>
+            <label><b>".$results['quantity']." in stock</b></label>
+            <input type='number' value='number'><br>
+            <label><b>Size:</b></label>
+                <select>
+                    <option></option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select><br>
+            <h4>Product details:</h4>
+            <p>".$results['product_description']."</p>
+        </div>
+    </div>
+    <form method='post' action='payment.php'>
+    <input type='hidden' name='id' value='".$results["product_id"]."'/>
+    <input type='submit' name='btn' value='Add to cart'/>
+    </form>";
 
     return $str;
 }

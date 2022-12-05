@@ -24,28 +24,10 @@
 
     <h1 id="message">Product details</h1>
 
-    <div class="product">
-        <div class="product-img">
-            <img src="src/example.jpg">
-        </div>
-        <div class="product-details">
-            <h3>Shirt</h3>
-            <h4>55$</h4>
-            <label><b>Quantity:</b></label>
-            <input type="number" value="number"><br>
-            <label><b>Size:</b></label>
-                <select>
-                    <option></option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                </select><br>
-            <h4>Product details:</h4>
-            <p>There are many variations of passages of Lorem Ipsum available, 
-                but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-        </div>
-    </div>
-    <button><b>Add to cart</b></button>
+    <?php
+        include '../Backend/config.php';
+        $id = $_GET['id'];
+        echo showItemsDetails($id);
+    ?>
 </body>
 </html>
