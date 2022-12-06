@@ -131,7 +131,7 @@ function showItemsDetails($id) {
         </div>
         <div class='product-details'>
             <h3>".$results['product_name']."</h3>
-            <h4>".$results['price']."</h4>
+            <h4>".$results['price']."$</h4><br>
             <label><b>".$results['quantity']." in stock</b></label>
             <input type='number' value='number'><br>
             <label><b>Size:</b></label>
@@ -148,7 +148,7 @@ function showItemsDetails($id) {
     </div>
     <form method='post' action='payment.php'>
     <input type='hidden' name='id' value='".$results["product_id"]."'/>
-    <input type='submit' name='btn' value='Add to cart'/>
+    <input id='bt' type='submit' name='btn' value='Add to cart'/>
     </form>";
 
     return $str;

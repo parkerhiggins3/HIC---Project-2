@@ -32,7 +32,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 30px 45px;
-    margin: 10px 20px;
+    margin: 10px 60px;
     border: 3px solid black;
     border-radius: 10px;
     background-color: #A0E4CB;
@@ -85,3 +85,12 @@ button{
 .order p{
     text-align: center;
 }
+#bt{
+    background-color: #35aff0;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px 30px 30px;
+    padding: 5px 30px;
+}
+
