@@ -94,14 +94,14 @@ function showItems($id) {
 
         $str .= "
             <div class='items'>
-            <img src='".$row["product_image"]."'>
-            <h3><a href='product.php?id=".$row['product_id']."'>".$row["product_name"]."</a></h3>
-            <h5>$".$row["price"]."</h5>
-            <p>Available in all sizes</p>
-            <form method='post' action='payment.php'>
-            <input type='hidden' name='id' value='".$row["product_id"]."'/>
-            <input type='submit' name='btn' value='Add to cart'/>
-            </form>
+                <img src='".$row["product_image"]."'>
+                <h3><a href='product.php?id=".$row['product_id']."'>".$row["product_name"]."</a></h3>
+                <h5>$".$row["price"]."</h5>
+                <p>Available in all sizes</p>
+                <form method='post' action='payment.php'>
+                    <input type='hidden' name='id' value='".$row["product_id"]."'/>
+                 <input type='submit' name='btn' value='Add to cart'/>
+                </form>
             </div>
         ";
 
