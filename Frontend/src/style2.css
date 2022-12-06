@@ -14,11 +14,17 @@ body{
     border-radius: 5px;
 }
 .items{
+    display: flex;
+    flex-direction: row;
     background-color: #A0E4CB;
     padding: 10px 20px 0px;
     border: 3px solid black;
     border-radius: 10px;
     margin: 5px 45px 45px;
+}
+.items-single img{
+    width: 80px;
+    height: 270px;
 }
 .items img{
     width: 90%;
