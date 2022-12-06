@@ -222,14 +222,13 @@ div a:visited{
 }
 
 .payment{
-    width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border: 3px solid black;
     border-radius: 10px;
     background-color: #b3fff0;
-    margin: 15px 30px;
+    margin: 15px 35px;
     padding: 20px 30px;
 }
 .items{
@@ -244,20 +243,24 @@ div a:visited{
     justify-content: space-between;
     border-left: 3px solid black;
     padding: 0px 45px 0px;
+
 }
 .card-at{
     border: 3px solid black;
     border-radius: 5px;
     background-color: #b3fff0;
-    align-items: flex-end;
+    justify-content: flex-end;
     margin: 25px 5px ;
+    background-color: white;
+    padding: 10px 30px 25px;
 }
 #bt{
     background-color: #35aff0;
     color: white;
     border-radius: 5px;
     font-size: 18px;
-    margin-bottom: 0px 25px 30px;
+    margin: 10px 30px 30px;
+    padding: 5px 30px;
 }
 button a{
     text-decoration: none;

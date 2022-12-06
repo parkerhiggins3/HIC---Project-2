@@ -37,14 +37,14 @@ include '../Backend/config.php';
 
     <div class="payment">
         <div class="items">
-            <h3>Items in your cart:</h3>
+            <h3 id="message">Items in your cart:</h3>
             <?php echo showCart()?>
             <h4>Total: $<?php echo showTotal() ?></h4>
         </div>
         <div class="card-details">
-            <h3><b>Payment</b></h3>
+            <h2><b>Payment</b></h2>
             <div class="card-at">
-                <p><b>Card details:</b></p>
+                <label id="message"><b>Card details</b></label><br><br>
                 <label><b>Payment method:</b></label>
                     <select>
                         <option value=></option>
